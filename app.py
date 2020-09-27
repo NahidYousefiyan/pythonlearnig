@@ -15,16 +15,15 @@ for item in "python":
 
 def fizz_buzz(number):
     if number % 3 == 0 and number % 5 == 0:
-        print("fiz-buz")
+        return("fiz-buz")
 
-    elif number % 3 == 0:
-        print("fiz")
+    if number % 3 == 0:
+        return("fiz")
 
-    elif number % 5 == 0:
-        print("buz")
+    if number % 5 == 0:
+        return("buz")
 
-    elif number % 3 != 0 or number % 5 != 0 or number % 15 != 0:
-        print(number)
+    return(number)
 
 
-fizz_buzz(4)
+print(fizz_buzz(4))
